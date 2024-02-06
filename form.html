@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Component</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-screen-xl min-h-screen mx-auto p-8 bg-white">
+    <div class="flex flex-col justify-between items-left m-4">
+        <h1 class="text-lg font-semibold text-left p-8"> Selected Availability:</h1>
+        <div class="table-container flex justify-center">
+            <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg min-w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                  Time
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sun 9
+                  </th>
+                  <th scope="col" class="px-3  py-3  text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Mon 10
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Tue 11
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Wed 12
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200  border border-gray-300">
+                    Thu 13
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Fri 14
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sat 15
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right"> 9:00 AM</td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Sun 9"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Mon 10"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Tue 11"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Wed 12"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Thu 13"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Fri 14"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Sat 15"></td>
+                </tr>
+                <tr>
+                  <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Sun 9"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Mon 10"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Tue 11"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Wed 12"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Thu 13"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Fri 14"></td>
+                  <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Sat 15"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      10:00 AM
+                    </td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      11:00 AM
+                    </td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      12:00 PM
+                    </td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      1:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      2:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      3:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      4:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      5:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      6:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      7:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      8:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      9:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      10:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                      11:00 PM
+                    </td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                    <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+                  <tr>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                      <td class="selectable whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  </tr>
+              </tbody>
+            </table>
+  </div>
+        <h1 class="text-lg font-semibold p-8">Invited Users:</h1>
+        <ul role="list" class="max-w-sm divide-y divide-gray-200 dark:divide-gray-700">
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="profile.jpg" alt="Neil image">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                            Jim Love
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            email@example.com
+                        </p>
+                    </div>
+                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                        <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
+                        Not Confirmed
+                    </span>
+                </div>
+            </li>
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="profile.jpg" alt="Neil image">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                            Peter Parker
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            email@example.com
+                        </p>
+                    </div>
+                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                        <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
+                        Not Confirmed
+                    </span>
+                </div>
+            </li>
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="profile.jpg" alt="Neil image">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                            Neil Sims
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            email@example.com
+                        </p>
+                    </div>
+                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                        <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
+                        Not Confirmed
+                    </span>
+                </div>
+            </li>
+            <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                        <img class="w-8 h-8 rounded-full" src="profile.jpg" alt="Neil image">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                            Bonnie Green
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            email@example.com
+                        </p>
+                    </div>
+                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                        <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
+                        Not Confirmed
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('#dropdownUsers a').forEach(item => {
+        item.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent the default anchor action
+    
+          const contactName = e.target.textContent.trim(); // Get the contact name
+          const contactsList = document.getElementById('contactsList');
+    
+          // Create a new list item for the contact with enhanced styling and SVG for the remove button
+          const li = document.createElement('li');
+          li.classList.add('flex', 'items-center', 'justify-between', 'px-4', 'py-2', 'm-2', 'bg-blue-100', 'rounded-full', 'hover:bg-blue-200', 'cursor-pointer', 'transition', 'duration-300', 'ease-in-out', 'shadow-md');
+          li.innerHTML = `
+            <span class="flex-1">${contactName}</span>
+            <button class="removeContact text-red-500 hover:text-red-700 ml-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          `;
+    
+          // Add the new list item to the contacts list
+          contactsList.appendChild(li);
+    
+          // Attach event listener to the remove button
+          li.querySelector('.removeContact').addEventListener('click', function() {
+            contactsList.removeChild(li);
+          });
+        });
+      });
+    });
+    </script>
+</html>
