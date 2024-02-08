@@ -1,31 +1,3 @@
-*{
-    font-family: 'Raleway', sans-serif;
-}
-
-.card{
-    border-bottom: 8px solid #ffbcd9 !important;
-    transition: transform 0.3s;
-
-
-}
-
-.card:hover{
-    transform: translateY(-8px);
-}
-
-.contact-card{
-    transition: transform 0.3s;
-}
-
-.contact-card:hover{
-    transform: translateY(-8px);
-}
-
-footer{
-    bottom:0;
-}
-
-
 .table-container{
     height: 700px;
     width: 100%;
@@ -63,7 +35,7 @@ table,tbody,th {
   background: white;
   z-index: 1;
 }
-
+  
 @media screen and (max-width: 640px) {
     th, #head, td {
       max-width: 5vw;
@@ -78,30 +50,8 @@ table,tbody,th {
 
 .selectable:hover {
     background: linear-gradient(to bottom right, #90d6f9, #f3f6f6);
-    cursor: pointer;
 }
 
 .selectable {
-    transition: all 0.3s ease; /* Smooth transition for all properties */
+    transition: all 0.3s ease; 
 }
-
-.purple-selected {
-  background: linear-gradient(to bottom right, #6c63ff, #e7dffb); 
-}
-
-.selected1{
-  background: linear-gradient(to bottom right, #f3f6f6, #90d6f9);
-}
-
-.selectable1:hover{
-  background: linear-gradient(to bottom right, #6c63ff, #e7dffb);
-  cursor: pointer;
-}
-
-.selectable1{
-  transition: all 0.3s ease; /* Smooth transition for all properties */
-}
-
-
-
-
