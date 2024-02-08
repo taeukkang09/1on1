@@ -1,0 +1,28 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.card{
+    border-bottom: 8px solid #ffbcd9 !important;
+    transition: transform 0.3s;
+
+
+}
+
+
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.contact-card{
+    transition: transform 0.3s;
+}
+
+.contact-card:hover{
+    transform: translateY(-8px);
+}
+
+footer{
+    bottom:0;
+}
