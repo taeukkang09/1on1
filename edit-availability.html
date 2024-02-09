@@ -10,7 +10,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <script src="script.js"></script>
         <title>Edit Availability</title>
     </head>
@@ -29,41 +28,8 @@
                            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                    </svg>
                </button>
-               <div class="flex items-right justify-right ml-auto p-4 pr-8">
-                   <div
-                       class="flex items-right md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                       <button type="button"
-                           class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-                           id="user-menu-button" aria-expanded="false"
-                           data-dropdown-toggle="user-dropdown"
-                           data-dropdown-placement="bottom">
-                           <span class="sr-only">Open user menu</span>
-                           <img class="w-8 h-8 rounded-full" src="media\josh-dun.jpg"
-                               alt="user photo">
-                       </button>
-                       <!-- Dropdown menu -->
-                       <div
-                           class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-                           id="user-dropdown">
-                           <div class="px-4 py-3">
-                               <span
-                                   class="block text-sm text-gray-900 dark:text-white">Josh Dun
-                                </span>
-                               <span
-                                   class="block text-sm  text-gray-500 truncate dark:text-gray-400">josh.dun@top.com</span>
-                           </div>
-                           <ul class="py-2" aria-labelledby="user-menu-button">
-                               <li>
-                                   <a href="#"
-                                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                       out</a>
-                               </li>
-                           </ul>
-                       </div>
-                   </div>
-               </div>
-     
            </div>
+          </div>
      
            <aside id="logo-sidebar"
                class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
@@ -144,22 +110,24 @@
                    </ul>
                </div>
            </aside>
-  
+  <
  
-   <div class="sm:ml-0 md:ml-64 max-w-screen-xl min-h-screen pl-8 bg-white">
-    <div class="flex justify-between items-center m-4">
-        <div class="text-4xl text-left w-3/4 border-b p-4">
-            <h1>Edit your Availability: </h1>
-        </div>
-      <div>
-        <a type="button" id="lastWeekButton" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 cursor-pointer">Last Week</a>
-        <a type="button" id="nextWeekButton" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 cursor-pointer">Next Week</a>
-      </div>
-    </div>
+           <div class="p-8 sm:ml-64"> 
+            <div class="text-left w-full border-b p-4 flex justify-between mb-4 items-center">
+              <h1 class="text-lg md:text-4xl"> Edit your Availability: </h1>
+              <div class="flex items-center justify-center">
+                <a type="button" id="lastWeekButton" class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full px-2 py-2 mr-1 "> <svg class="w-5 h-5 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                </svg> </a>
+                <a type="button" id="nextWeekButton" class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full px-2 py-2 "> <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                </svg> </a>
+              </div>
+          </div>
 
     <!-- Calendar Table -->
-    <div class="table-container flex justify-center">
-            <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg min-w-full">
+    <div class="table-container m-8">
+            <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg w-full">
               <thead class="bg-gray-50">
                 <tr>
                   <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
@@ -521,7 +489,7 @@
            
         </div>
         <div class="flex justify-center">
-            <a href="" onclick="sendNotification()" type="button" id="continueButton" class="mt-8 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Submit</a>
+            <a href="" onclick="sendNotification()" type="button" id="continueButton" class="mt-8 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2">Submit</a>
         </div>
     </div>
     </main>

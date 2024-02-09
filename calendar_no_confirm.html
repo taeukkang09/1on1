@@ -471,7 +471,12 @@
               </tbody>
             </table>
   </div>
-  <h1 class="text-lg md:text-4xl mt-8 border-b p-4">Invited Users:</h1>
+  <div class="flex justify-center">
+    <a href="edit-availability.html" type="button" id="continueButton"
+      class="mt-8 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Edit
+      Availability</a>
+  </div>
+  <h1 class="text-lg md:text-4xl border-b p-4">Invited Users:</h1>
         <div id="selectedContacts" class="mt-4 flex flex-col justify-center">
         <ul role="list" class="max-w-sm divide-y divide-gray-200 dark:divide-gray-700 mx-auto">
             <li class="py-3 sm:py-4">
@@ -487,10 +492,19 @@
                             email@example.com
                         </p>
                     </div>
-                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                    <div class="flex flex-col space-y-2">
+                      <span
+                        class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
                         <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
                         Not Confirmed
-                    </span>
+                      </span>
+                      <span
+                        class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                        <span class="w-2 h-2 mr-1 bg-blue-500 rounded-full"></span>
+                        <button onclick="sendReminder('Jim Love')" class="underline">Send
+                          Reminder</button>
+                      </span>
+                    </div>
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -506,10 +520,19 @@
                             email@example.com
                         </p>
                     </div>
-                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                    <div class="flex flex-col space-y-2">
+                      <span
+                        class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
                         <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
                         Not Confirmed
-                    </span>
+                      </span>
+                      <span
+                        class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                        <span class="w-2 h-2 mr-1 bg-blue-500 rounded-full"></span>
+                        <button onclick="sendReminder('Jim Love')" class="underline">Send
+                          Reminder</button>
+                      </span>
+                    </div>
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -525,10 +548,19 @@
                             email@example.com
                         </p>
                     </div>
-                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                    <div class="flex flex-col space-y-2">
+                      <span
+                        class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
                         <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
                         Not Confirmed
-                    </span>
+                      </span>
+                      <span
+                        class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                        <span class="w-2 h-2 mr-1 bg-blue-500 rounded-full"></span>
+                        <button onclick="sendReminder('Jim Love')" class="underline">Send
+                          Reminder</button>
+                      </span>
+                    </div>
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -544,16 +576,22 @@
                             email@example.com
                         </p>
                     </div>
-                    <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
+                    <div class="flex flex-col space-y-2">
+                      <span
+                        class="inline-flex items-center bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">
                         <span class="w-2 h-2 me-1 bg-red-500 rounded-full"></span>
                         Not Confirmed
-                    </span>
+                      </span>
+                      <span
+                        class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                        <span class="w-2 h-2 mr-1 bg-blue-500 rounded-full"></span>
+                        <button onclick="sendReminder('Jim Love')" class="underline">Send
+                          Reminder</button>
+                      </span>
+                    </div>
                 </div>
             </li>
         </ul>
-      </div>
-      <div class="flex justify-center">
-        <a href="dashboard.html" type="button" id="continueButton" class="mt-8 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2">Return to Home</a>
       </div>
     </div>
     </div>
