@@ -35,7 +35,7 @@
         </a>
         <ul class="space-y-2 font-medium">
           <li class="pt-8">
-            <a type="button"
+            <a type="button" href="calendar.html"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center">
               Create Calendar
               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -100,496 +100,1438 @@
             </svg> </a>
         </div>
       </div>
+      <p class="pl-4">Suggested Calendars:</p>
 
       <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="suggested-calendars" data-tabs-toggle="#suggested-calendars-content" role="tablist">
           <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Option 1</button>
+            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="calendar1-tab" data-tabs-target="#calendar1" type="button" role="tab" aria-controls="profile" aria-selected="true">Option 1</button>
           </li>
           <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button"
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="calendar2-tab" data-tabs-target="#calendar2" type="button"
               role="tab" aria-controls="dashboard" aria-selected="false">Option 2</button>
           </li>
           <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button"
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="calendar3-tab" data-tabs-target="#calendar3" type="button"
               role="tab" aria-controls="settings" aria-selected="false">Option 3</button>
           </li>
         </ul>
       </div>
-      <div id="default-tab-content">
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>.
-            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+      <div id="suggested-calendars-content">
+        <div class="hidden rounded-lg" id="calendar1" role="tabpanel" aria-labelledby="calendar1-tab">
+        <!-- ######################################################################################################################## -->
+          <!-- Suggested Calendar #1  #} -->
+          <div class="table-container flex justify-center">
+            <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg min-w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Time
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sun 9
+                  </th>
+                  <th scope="col" class="px-3  py-3  text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Mon 10
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Tue 11
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Wed 12
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200  border border-gray-300">
+                    Thu 13
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Fri 14
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sat 15
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    9:00 AM</td>
+                  <td rowspan="2" data-popover-target="jim-popover-1" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM"
+                    data-date="Sun 9">Jim</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Mon 10"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Tue 11"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Wed 12"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Thu 13"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Fri 14"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Sat 15"></td>
+                </tr>
+                <div data-popover id="jim-popover-1" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Jim</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Sunday, February 9th @9AM-10AM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Mon 10"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Tue 11"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Wed 12"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Thu 13"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Fri 14"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Sat 15"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    10:00 AM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    11:00 AM
+                  </td>
+                  <td rowspan="2" data-popover-target="peter-popover-1" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Peter</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="peter-popover-1" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Peter</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Sunday, February 9th @11AM-12PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    12:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    1:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td rowspan="2" data-popover-target="neil-popover-1" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Neil</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="neil-popover-1" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Neil</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Sunday, February 14th @1PM-2PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    2:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    3:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    4:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    5:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td rowspan="2" data-popover-target="bonnie-popover-1" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Bonnie</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="bonnie-popover-1" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Bonnie</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Thursday, February 13th @5PM-6PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    6:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    7:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    8:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    9:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    10:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    11:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <!-- ################################################ END OF CALENDAR #1 ################################################### -->
         </div>
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-          <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>.
-            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+        <div class="hidden rounded-lg" id="calendar2" role="tabpanel" aria-labelledby="calendar2-tab">
+          <!-- ############################################### START OF CALENDAR #2 ######################################################################### -->
+          <!-- Suggested Calendar #2  #} -->
+          <div class="table-container flex justify-center">
+            <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg min-w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Time
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sun 9
+                  </th>
+                  <th scope="col" class="px-3  py-3  text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Mon 10
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Tue 11
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Wed 12
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200  border border-gray-300">
+                    Thu 13
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Fri 14
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sat 15
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    9:00 AM</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td rowspan="2" data-popover-target="jim-popover-2" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Jim</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="jim-popover-2" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Jim</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Thursday, February 13th @9AM-10AM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Mon 10"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Tue 11"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Wed 12"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Thu 13"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Fri 14"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Sat 15"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    10:00 AM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    11:00 AM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td rowspan="2" data-popover-target="peter-popover-2" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Peter</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="peter-popover-2" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Peter</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Monday, February 1th @11AM-12PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    12:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    1:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td rowspan="2" data-popover-target="neil-popover-2" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Neil</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="neil-popover-2" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Neil</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Sunday, February 14th @1PM-2PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    2:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    3:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    4:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    5:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td rowspan="2" data-popover-target="bonnie-popover-2" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Bonnie</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="bonnie-popover-2" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Bonnie</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Thursday, February 13th @5PM-6PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    6:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    7:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    8:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    9:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    10:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    11:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- ################################################ END OF CALENDAR #2 ################################################### -->
         </div>
-        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-          <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>.
-            Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+        <div class="hidden rounded-lg" id="calendar3" role="tabpanel" aria-labelledby="calendar3-tab">
+          <!-- ################################################# START OF CALENDAR #3 ###################################################################### -->
+          <div class="table-container flex justify-center">
+            <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg min-w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Time
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sun 9
+                  </th>
+                  <th scope="col" class="px-3  py-3  text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Mon 10
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Tue 11
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Wed 12
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200  border border-gray-300">
+                    Thu 13
+                  </th>
+                  <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Fri 14
+                  </th>
+                  <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
+                    Sat 15
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    9:00 AM</td>
+                  <td rowspan="2" data-popover-target="jim-popover-3" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM"
+                    data-date="Sun 9">Jim</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Mon 10"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Tue 11"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Wed 12"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Thu 13"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Fri 14"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Sat 15"></td>
+                </tr>
+                <div data-popover id="jim-popover-3" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Jim</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Sunday, February 9th @9AM-10AM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Mon 10"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Tue 11"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Wed 12"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Thu 13"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Fri 14"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Sat 15"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    10:00 AM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    11:00 AM
+                  </td>
+                  <td rowspan="2" data-popover-target="peter-popover-3" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Peter</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="peter-popover-3" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Peter</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Sunday, February 9th @11AM-12PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    12:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    1:00 PM
+                  </td>
+                  <td rowspan="2" data-popover-target="neil-popover-3" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Neil</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="neil-popover-3" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Neil</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Sunday, February 9th @1PM-2PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    2:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    3:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    4:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    5:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td rowspan="2" data-popover-target="bonnie-popover-3" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Bonnie</td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <div data-popover id="bonnie-popover-3" role="tooltip"
+                  class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                  <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                    <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Bonnie</h3>
+                  </div>
+                  <div class="px-3 py-2">
+                    <p><b>Thursday, February 13th @5PM-6PM</b></p>
+                    <p>Notes: Prepare slides before this meeting.</p>
+                    <div>
+                      <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
+                      <select id="category"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                        <option selected="">Select Time</option>
+                        <option value="TV">Feb.10th @11AM-12PM</option>
+                        <option value="PC">Feb.11th @9AM-10AM</option>
+                        <option value="GA">Feb.12th @9AM-10AM</option>
+                      </select>
+                    </div>
+                    <a href="waiting-schedule.html" type="button" id="continueButton"
+                      class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
+                    </a>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    6:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    7:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    8:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    9:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    10:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+          
+                <tr>
+                  <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
+                    11:00 PM
+                  </td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+                <tr>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                  <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- ################################################ END OF CALENDAR #3 ################################################### -->
         </div>
       </div>
 
-      <div class="table-container flex justify-center">
-        <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg min-w-full">
-          <thead class="bg-gray-50">
-            <tr>
-              <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
-                Time
-              </th>
-              <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
-                Sun 9
-              </th>
-              <th scope="col" class="px-3  py-3  text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
-                Mon 10
-              </th>
-              <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
-                Tue 11
-              </th>
-              <th scope="col" class="px-3 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
-                Wed 12
-              </th>
-              <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200  border border-gray-300">
-                Thu 13
-              </th>
-              <th scope="col" class="px-3 py-3 text-xs font-medium  text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
-                Fri 14
-              </th>
-              <th scope="col" class="px-3 py-3  text-xs font-medium text-gray-500 uppercase tracking-wider text-center bg-gray-200 border border-gray-300">
-                Sat 15
-              </th>
-            </tr>
-          </thead>
-          <tbody class="bg-white">
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                9:00 AM</td>
-              <td rowspan="2" data-popover-target="jim-popover" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM"
-                data-date="Sun 9">Jim</td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Mon 10"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Tue 11"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Wed 12"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Thu 13"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Fri 14"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:00 AM" data-date="Sat 15"></td>
-            </tr>
-            <div data-popover id="jim-popover" role="tooltip"
-              class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-              <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Jim</h3>
-              </div>
-              <div class="px-3 py-2">
-                <p><b>Sunday, February 9th @9AM-10AM</b></p>
-                <p>Notes: Prepare slides before this meeting.</p>
-                <div>
-                  <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
-                  <select id="category"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                    <option selected="">Select Time</option>
-                    <option value="TV">Feb.10th @11AM-12PM</option>
-                    <option value="PC">Feb.11th @9AM-10AM</option>
-                    <option value="GA">Feb.12th @9AM-10AM</option>
-                  </select>
-                </div>
-                <a href="waiting-schedule.html" type="button" id="continueButton"
-                  class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
-                </a>
-              </div>
-              <div data-popper-arrow></div>
-            </div>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Mon 10"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Tue 11"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Wed 12"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Thu 13"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Fri 14"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100" data-time="9:30 AM" data-date="Sat 15"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                10:00 AM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                11:00 AM
-              </td>
-              <td rowspan="2" data-popover-target="peter-popover" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Peter</td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <div data-popover id="peter-popover" role="tooltip"
-              class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-              <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Peter</h3>
-              </div>
-              <div class="px-3 py-2">
-                <p><b>Sunday, February 9th @11AM-12PM</b></p>
-                <p>Notes: Prepare slides before this meeting.</p>
-                <div>
-                  <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
-                  <select id="category"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                    <option selected="">Select Time</option>
-                    <option value="TV">Feb.10th @11AM-12PM</option>
-                    <option value="PC">Feb.11th @9AM-10AM</option>
-                    <option value="GA">Feb.12th @9AM-10AM</option>
-                  </select>
-                </div>
-                <a href="waiting-schedule.html" type="button" id="continueButton"
-                  class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
-                </a>
-              </div>
-              <div data-popper-arrow></div>
-            </div>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                12:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                1:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td rowspan="2" data-popover-target="neil-popover" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Neil</td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <div data-popover id="neil-popover" role="tooltip"
-              class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-              <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Neil</h3>
-              </div>
-              <div class="px-3 py-2">
-                <p><b>Sunday, February 14th @1PM-2PM</b></p>
-                <p>Notes: Prepare slides before this meeting.</p>
-                <div>
-                  <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
-                  <select id="category"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                    <option selected="">Select Time</option>
-                    <option value="TV">Feb.10th @11AM-12PM</option>
-                    <option value="PC">Feb.11th @9AM-10AM</option>
-                    <option value="GA">Feb.12th @9AM-10AM</option>
-                  </select>
-                </div>
-                <a href="waiting-schedule.html" type="button" id="continueButton"
-                  class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
-                </a>
-              </div>
-              <div data-popper-arrow></div>
-            </div>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                2:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                3:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                4:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                5:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td rowspan="2" data-popover-target="bonnie-popover" data-popover-trigger="click" class="selected whitespace-nowrap text-sm text-gray-500 border border-gray-100">Bonnie</td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <div data-popover id="bonnie-popover" role="tooltip"
-              class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-              <div class="px-3 py-2 bg-blue-400 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Meeting w/ Bonnie</h3>
-              </div>
-              <div class="px-3 py-2">
-                <p><b>Thursday, February 13th @5PM-6PM</b></p>
-                <p>Notes: Prepare slides before this meeting.</p>
-                <div>
-                  <label for="category" class="block mt-2 mb-2">Alternate Times:</label>
-                  <select id="category"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                    <option selected="">Select Time</option>
-                    <option value="TV">Feb.10th @11AM-12PM</option>
-                    <option value="PC">Feb.11th @9AM-10AM</option>
-                    <option value="GA">Feb.12th @9AM-10AM</option>
-                  </select>
-                </div>
-                <a href="waiting-schedule.html" type="button" id="continueButton"
-                  class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-1 mb-2 mt-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Save
-                </a>
-              </div>
-              <div data-popper-arrow></div>
-            </div>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                6:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                7:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                8:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                9:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                10:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-
-            <tr>
-              <td rowspan="2" class="pr-2 py-4 whitespace-nowrap text-xs font-medium bg-white text-gray-500 text-right">
-                11:00 PM
-              </td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-            <tr>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-              <td class="whitespace-nowrap text-sm text-gray-500 border border-gray-100"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+      
       <div class="flex justify-center">
-        <a href="dashboard.html" type="button" id="continueButton"
-          class="mt-8 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Finalize
-        </a>
+        <button id="successButton" data-modal-target="successModal" data-modal-toggle="successModal"
+          class="mt-8 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          type="button">
+          Finalize Calendar
+        </button>
+      </div>
+      <!-- Success modal -->
+      <div id="successModal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full">
+        <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+          <!-- Modal content -->
+          <div class="relative p-4 text-center bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+            <button type="button"
+              class="text-gray-400 absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              data-modal-toggle="successModal">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+            <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 p-2 flex items-center justify-center mx-auto mb-3.5">
+              <svg aria-hidden="true" class="w-8 h-8 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Success</span>
+            </div>
+            <p class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">Successfully finalized calendar!</p>
+            <button id="continue-button" data-modal-toggle="successModal" type="button"
+              class="py-2 px-3 text-sm font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-900">
+              Continue
+            </button>
+          </div>
+        </div>
       </div>
 
       <h1 class="text-lg md:text-4xl mt-10 border-b p-4">Invited Users:</h1>
@@ -698,6 +1640,10 @@
   function sendReminder(name) {
     alert("Reminder sent to " + name);
   }
+
+  document.getElementById('continue-button').addEventListener('click', function () {
+      window.location.href = 'finalized-schedule.html';
+    });
 
 </script>
 
