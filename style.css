@@ -91,10 +91,6 @@ table,tbody,th {
     transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
-.purple-selected {
-  background: linear-gradient(to bottom right, #6c63ff, #e7dffb); 
-}
-
 .selected1{
   background: linear-gradient(to bottom right, #f3f6f6, #90d6f9);
 }
@@ -105,6 +101,23 @@ table,tbody,th {
 }
 
 .selectable1{
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.purple-selected {
+  background: linear-gradient(to bottom right, #6c63ff, #e7dffb); 
+}
+
+.purple-selected1 {
+  background: linear-gradient(to bottom right, #6c63ff, #e7dffb); 
+}
+
+.selectable2:hover{
+  background: linear-gradient(to bottom right, #6c63ff, #e7dffb);
+  cursor: pointer;
+}
+
+.selectable2{
   transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
