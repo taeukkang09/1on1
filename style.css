@@ -69,12 +69,6 @@ table,tbody,th {
       max-width: 5vw;
       font-size: 7.5px !important;
     }
-
-    .add-contact-button{
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      font-size: xx-small; 
-    }
 }
 
 .selected {
@@ -91,6 +85,10 @@ table,tbody,th {
     transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
+.purple-selected {
+  background: linear-gradient(to bottom right, #6c63ff, #e7dffb); 
+}
+
 .selected1{
   background: linear-gradient(to bottom right, #f3f6f6, #90d6f9);
 }
@@ -102,33 +100,6 @@ table,tbody,th {
 
 .selectable1{
   transition: all 0.3s ease; /* Smooth transition for all properties */
-}
-
-.purple-selected {
-  background: linear-gradient(to bottom right, #6c63ff, #e7dffb); 
-}
-
-.purple-selected1 {
-  background: linear-gradient(to bottom right, #6c63ff, #e7dffb); 
-}
-
-.selectable2:hover{
-  background: linear-gradient(to bottom right, #6c63ff, #e7dffb);
-  cursor: pointer;
-}
-
-.selectable2{
-  transition: all 0.3s ease; /* Smooth transition for all properties */
-}
-
-.flex-container{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main{
-  flex: 1;
 }
 
 

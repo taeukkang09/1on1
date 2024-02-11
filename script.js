@@ -34,16 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function togglePurpleCell(cell){
-        if(cell.classList.contains('purple-selected1')){
-            cell.classList.remove('purple-selected1');
-            cell.classList.add('selected1');
-        }
-        else if(cell.classList.contains('selectable2')){
-            cell.classList.add('purple-selected1');
-        }
-    }
-
     // Apply event listeners to each selectable cell
     document.querySelectorAll('.selectable1').forEach(function(cell) {
         cell.addEventListener('mousedown', function(e) {
@@ -54,19 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
         cell.addEventListener('mouseenter', function() {
             if (isDragging) {
                 toggleCellSelection(this);
-            }
-        });
-    });
-
-    document.querySelectorAll('.selectable2').forEach(function(cell){
-        cell.addEventListener('mousedown', function(e){
-            e.preventDefault();
-            isDragging = true;
-            togglePurpleCell(this);
-        });
-        cell.addEventListener('mouseenter', function(){
-            if(isDragging){
-                togglePurpleCell(this);
             }
         });
     });
