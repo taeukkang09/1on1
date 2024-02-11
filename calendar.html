@@ -31,8 +31,7 @@
     <div
         class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <a href="dashboard.html" class="flex items-center ps-2.5 mb-5">
-            <img src="https://flowbite.com/docs/images/logo.svg"
-                class="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
+          <img src="media/calendar_logo.png" class="h-6 me-3 sm:h-7" alt="Calendar Logo" />
             <span
                 class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">1on1</span>
         </a>
@@ -93,7 +92,7 @@
                 </a>
             </li>
             <li>
-                <a href="#"
+                <a href="login.html"
                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                     <svg
                         class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" 
@@ -117,7 +116,7 @@
 
 <div class="p-8 sm:ml-64"> 
   <div class="text-left w-full border-b p-4 flex justify-between mb-4 items-center">
-    <h1 class="text-lg md:text-4xl font-bold"> Pick your Availability: </h1>
+    <h1 class="text-lg md:text-4xl"> Pick your Availability: </h1>
     <div class="flex items-center justify-center">
       <a type="button" id="lastWeekButton" class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full px-2 py-2 mr-1 "> <svg class="w-5 h-5 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
@@ -491,72 +490,92 @@
             </table>
   </div>
 
-  <div class="text-lg text-left w-full border-b p-4 flex justify-between sm:text-3xl my-8">
-  <h1 class="text-lg md:text-4xl font-bold">Invite Users to Calendar:</h1>
-  
-<button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center inline-flex items-center" type="button">Add Contacts<svg class="w-2.5 h-2.5 ms-3 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
+  <div class="text-lg text-left w-full border-b p-4 sm:text-3xl my-8">
+    <h1 class="text-lg md:text-4xl border-b p-4">Calendar Information:</h1>
+    <div class="pt-4 mx-auto max-w-2xl">
+      <form action="#">
+        <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+            <div class="col-span-2">
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Calendar Name</label>
+                <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required>
+            </div>
 
-<!-- Dropdown menu -->
-<div id="dropdownUsers" class="z-10 hidden bg-white rounded-lg shadow w-60 dark:bg-gray-700">
-  <ul class="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
-    <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Jessica Myers
-      </a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Micheal Gough
-      </a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Peter Parker
-      </a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Leslie Livingston
-      </a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Jim Love
-      </a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Thomas Lean
-      </a>
-    </li>
-          <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Lana Byrd
-      </a>
-    </li>
-    <li>
-      <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-        <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
-        Neil Sims
-      </a>
-    </li>
-  </ul>
-  <a href="contact.html" class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
-      <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
-        <path d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z"/>
-      </svg>
-      Add new user
-  </a>
+            <div class="col-span-2">
+                <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                <textarea id="description" rows="8" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your description here" required></textarea>
+            </div>
+        </div>
+        <div class="flex items-center justify-center">
+        <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 text-center inline-flex items-center m-4" type="button">Add Contacts<svg class="w-2.5 h-2.5 ms-3 ml-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+          </button>
+        </div>
+     </form>
+    </div>
+  
+  <div class="flex justify-center items-center">
+  
+</div>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownUsers" class="z-10 hidden bg-white rounded-lg shadow w-60 dark:bg-gray-700">
+    <ul class="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+      <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Jessica Myers
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Micheal Gough
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Peter Parker
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Leslie Livingston
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Jim Love
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Thomas Lean
+        </a>
+      </li>
+            <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Lana Byrd
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+          <img class="w-6 h-6 me-2 rounded-full" src="profile.jpg" alt="Jese image">
+          Neil Sims
+        </a>
+      </li>
+    </ul>
+    <a href="contact.html" class="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline">
+        <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+          <path d="M6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Zm11-3h-2V5a1 1 0 0 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 0 0 2 0V9h2a1 1 0 1 0 0-2Z"/>
+        </svg>
+        Add new user
+    </a>
 </div>
 </div>
 
