@@ -114,7 +114,7 @@
 </aside>
   <div class="p-8 sm:ml-64"> 
     <div class="text-left w-full border-b p-4 flex justify-between mb-4 items-center">
-      <h1 class="text-lg md:text-4xl"> Selected Availability: </h1>
+      <h1 class="text-lg md:text-4xl font-bold"> Selected Availability: </h1>
     </div>
         <div class="table-container m-8">
             <table class="divide-y divide-gray-200 border border-gray-200 shadow-xl sm:rounded-lg w-full">
@@ -482,7 +482,7 @@
       class="mt-8 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Edit
       Availability</a>
   </div>
-  <h1 class="text-lg md:text-4xl border-b p-4">Invited Users:</h1>
+  <h1 class="text-lg md:text-4xl border-b p-4 font-bold">Invited Users:</h1>
         <div id="selectedContacts" class="mt-4 flex flex-col justify-center">
         <ul role="list" class="max-w-sm divide-y divide-gray-200 dark:divide-gray-700 mx-auto">
             <li class="py-3 sm:py-4">
@@ -495,7 +495,7 @@
                             Jim Love
                         </p>
                         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@example.com
+                            jim.love@gmail.com
                         </p>
                     </div>
                     <div class="flex flex-col space-y-2">
@@ -523,7 +523,7 @@
                             Peter Parker
                         </p>
                         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@example.com
+                            peter.parker@spiderman.web
                         </p>
                     </div>
                     <div class="flex flex-col space-y-2">
@@ -535,7 +535,7 @@
                       <span
                         class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                         <span class="w-2 h-2 mr-1 bg-blue-500 rounded-full"></span>
-                        <button onclick="sendReminder('Jim Love')" class="underline">Send
+                        <button onclick="sendReminder('Peter Parker')" class="underline">Send
                           Reminder</button>
                       </span>
                     </div>
@@ -551,7 +551,7 @@
                             Neil Sims
                         </p>
                         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@example.com
+                            neil.sims@gmail.com
                         </p>
                     </div>
                     <div class="flex flex-col space-y-2">
@@ -563,7 +563,7 @@
                       <span
                         class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                         <span class="w-2 h-2 mr-1 bg-blue-500 rounded-full"></span>
-                        <button onclick="sendReminder('Jim Love')" class="underline">Send
+                        <button onclick="sendReminder('Neil Sims')" class="underline">Send
                           Reminder</button>
                       </span>
                     </div>
@@ -579,7 +579,7 @@
                             Bonnie Green
                         </p>
                         <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                            email@example.com
+                            bonnie.green@gmail.com
                         </p>
                     </div>
                     <div class="flex flex-col space-y-2">
@@ -591,7 +591,7 @@
                       <span
                         class="inline-flex items-center bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                         <span class="w-2 h-2 mr-1 bg-blue-500 rounded-full"></span>
-                        <button onclick="sendReminder('Jim Love')" class="underline">Send
+                        <button onclick="sendReminder('Bonnie Green')" class="underline">Send
                           Reminder</button>
                       </span>
                     </div>
@@ -605,35 +605,9 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('#dropdownUsers a').forEach(item => {
-        item.addEventListener('click', function(e) {
-          e.preventDefault(); // Prevent the default anchor action
-    
-          const contactName = e.target.textContent.trim(); // Get the contact name
-          const contactsList = document.getElementById('contactsList');
-    
-          // Create a new list item for the contact with enhanced styling and SVG for the remove button
-          const li = document.createElement('li');
-          li.classList.add('flex', 'items-center', 'justify-between', 'px-4', 'py-2', 'm-2', 'bg-blue-100', 'rounded-full', 'hover:bg-blue-200', 'cursor-pointer', 'transition', 'duration-300', 'ease-in-out', 'shadow-md');
-          li.innerHTML = `
-            <span class="flex-1">${contactName}</span>
-            <button class="removeContact text-red-500 hover:text-red-700 ml-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          `;
-    
-          // Add the new list item to the contacts list
-          contactsList.appendChild(li);
-    
-          // Attach event listener to the remove button
-          li.querySelector('.removeContact').addEventListener('click', function() {
-            contactsList.removeChild(li);
-          });
-        });
-      });
-    });
+  function sendReminder(name) {
+     alert("Reminder sent to " + name);
+  }
+
     </script>
 </html>
